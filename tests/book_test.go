@@ -41,7 +41,7 @@ func TestDeleteBook(t *testing.T) {
     if err != nil {
         t.Errorf("Delete failed: %v", err)
     }
-    // перевіримо, що книга справді видалена
+    
     if _, err := store.GetBook(created.ID); err == nil {
         t.Errorf("Expected error for deleted book, but got none")
     }
