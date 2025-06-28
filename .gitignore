@@ -1,0 +1,6 @@
+k/bin/
+/vendor/
+*.log
+*.test
+
+
